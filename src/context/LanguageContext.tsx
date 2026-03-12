@@ -60,7 +60,16 @@ const translations: Record<Language, Record<string, string>> = {
     'cookie.description': 'We use cookies to enhance your browsing experience and analyze our traffic. Please choose your preference.',
     'cookie.allowAll': 'Allow all cookies',
     'cookie.rejectAll': 'Reject all cookies',
-    'cookie.blockThirdParty': 'Block third-party cookies'
+    'cookie.blockThirdParty': 'Block third-party cookies',
+    'subscribe.button': 'Subscribe',
+    'subscribe.title': 'Stay Informed',
+    'subscribe.description': 'Enter your email to receive notifications about our latest equity analysis and market briefs.',
+    'subscribe.placeholder': 'Enter your email address',
+    'subscribe.submit': 'Subscribe Now',
+    'subscribe.success': 'Thank you for subscribing!',
+    'subscribe.successDetail': 'A confirmation message has been sent to {email}.',
+    'subscribe.invalidEmail': 'Please enter a valid email address.',
+    'subscribe.permission': 'I agree to receive email notifications for new articles.'
   },
   ko: {
     'nav.home': '홈',
@@ -113,7 +122,16 @@ const translations: Record<Language, Record<string, string>> = {
     'cookie.description': '당사는 귀하의 브라우징 경험을 개선하고 트래픽을 분석하기 위해 쿠키를 사용합니다. 선호하는 설정을 선택해 주세요.',
     'cookie.allowAll': '모든 쿠키 허용',
     'cookie.rejectAll': '모든 쿠키 거부',
-    'cookie.blockThirdParty': '제3자 쿠키 차단'
+    'cookie.blockThirdParty': '제3자 쿠키 차단',
+    'subscribe.button': '구독하기',
+    'subscribe.title': '최신 정보 받기',
+    'subscribe.description': '이메일을 입력하시면 최신 주식 분석 및 시장 브리핑에 대한 알림을 받으실 수 있습니다.',
+    'subscribe.placeholder': '이메일 주소를 입력하세요',
+    'subscribe.submit': '지금 구독하기',
+    'subscribe.success': '구독해 주셔서 감사합니다!',
+    'subscribe.successDetail': '{email} 주소로 확인 메시지가 전송되었습니다.',
+    'subscribe.invalidEmail': '유효한 이메일 주소를 입력해 주세요.',
+    'subscribe.permission': '새 기사에 대한 이메일 알림 수신에 동의합니다.'
   }
 };
 
