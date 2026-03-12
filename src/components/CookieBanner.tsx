@@ -32,39 +32,41 @@ export const CookieBanner: React.FC = () => {
           className="fixed bottom-0 left-0 right-0 z-[100] p-4 md:p-6"
         >
           <div className="max-w-4xl mx-auto bg-white border border-zinc-200 shadow-2xl rounded-xl overflow-hidden">
-            <div className="p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6">
-              <div className="bg-jpm-off-white p-4 rounded-full text-jpm-teal shrink-0">
+            <div className="p-6 md:p-8 flex items-start gap-6 relative">
+              <div className="bg-jpm-off-white p-4 rounded-full text-jpm-teal shrink-0 mt-1">
                 <Cookie size={32} />
               </div>
               
-              <div className="flex-1 flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-6">
-                <h3 className="text-lg font-serif font-bold text-jpm-brown whitespace-nowrap">
-                  {t('cookie.title')}
-                </h3>
-                <p className="text-sm text-zinc-600 leading-relaxed max-w-2xl">
-                  {t('cookie.description')}
-                </p>
-              </div>
+              <div className="flex-1 space-y-6">
+                <div className="space-y-2">
+                  <h3 className="text-xl font-serif font-bold text-jpm-brown">
+                    {t('cookie.title')}
+                  </h3>
+                  <p className="text-sm text-zinc-600 leading-relaxed max-w-3xl">
+                    {t('cookie.description')}
+                  </p>
+                </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-                <button
-                  onClick={() => handleConsent('all')}
-                  className="px-6 py-2.5 bg-jpm-teal text-white text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-opacity-90 transition-all whitespace-nowrap"
-                >
-                  {t('cookie.allowAll')}
-                </button>
-                <button
-                  onClick={() => handleConsent('third-party')}
-                  className="px-6 py-2.5 bg-white text-jpm-teal border border-jpm-teal text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-jpm-off-white transition-all whitespace-nowrap"
-                >
-                  {t('cookie.blockThirdParty')}
-                </button>
-                <button
-                  onClick={() => handleConsent('reject')}
-                  className="px-6 py-2.5 bg-zinc-100 text-zinc-600 text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-zinc-200 transition-all whitespace-nowrap"
-                >
-                  {t('cookie.rejectAll')}
-                </button>
+                <div className="flex flex-wrap gap-3">
+                  <button
+                    onClick={() => handleConsent('all')}
+                    className="px-5 py-2 bg-jpm-teal text-white text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-opacity-90 transition-all whitespace-nowrap"
+                  >
+                    {t('cookie.allowAll')}
+                  </button>
+                  <button
+                    onClick={() => handleConsent('third-party')}
+                    className="px-5 py-2 bg-white text-jpm-teal border border-jpm-teal text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-jpm-off-white transition-all whitespace-nowrap"
+                  >
+                    {t('cookie.blockThirdParty')}
+                  </button>
+                  <button
+                    onClick={() => handleConsent('reject')}
+                    className="px-5 py-2 bg-zinc-100 text-zinc-600 text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-zinc-200 transition-all whitespace-nowrap"
+                  >
+                    {t('cookie.rejectAll')}
+                  </button>
+                </div>
               </div>
 
               <button 
