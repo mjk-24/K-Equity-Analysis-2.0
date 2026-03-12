@@ -27,7 +27,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ title, date }) => {
         <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest">{t('legal.lastUpdated')}: {date}</p>
       </header>
 
-      <div className="min-h-[400px] text-zinc-600 leading-relaxed">
+      <div className="min-h-[400px] text-zinc-600 leading-normal">
         {/* Content left blank for now */}
         <p className="italic text-zinc-400">{t('legal.placeholder')}</p>
       </div>

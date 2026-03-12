@@ -10,7 +10,7 @@ function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const NewsBriefs: React.FC<{ compact?: boolean }> = ({ compact }) => {
+export const NewsBriefs: React.FC<{ compact?: boolean; fromHome?: boolean }> = ({ compact, fromHome }) => {
   const { language, t } = useLanguage();
   const displayNews = compact ? mockNews.slice(0, 3) : mockNews;
 
@@ -19,17 +19,22 @@ export const NewsBriefs: React.FC<{ compact?: boolean }> = ({ compact }) => {
       <div className={cn("flex items-center gap-3", compact ? "mb-6" : "mb-8")}>
         <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-jpm-brown">{t('market.briefs')}</h2>
       </div>
-      <div className={cn("space-y-8", compact && "space-y-4")}>
+      <div className={cn("space-y-12", compact && "space-y-6")}>
         {displayNews.map((item) => {
           const title = language === 'ko' && item.title_ko ? item.title_ko : item.title;
           return (
-            <Link key={item.id} to={`/news/${item.id}`} className="group block">
+            <Link 
+              key={item.id} 
+              to={`/news/${item.id}`} 
+              state={{ fromHome }}
+              className="group block"
+            >
               <div className="flex justify-between items-start mb-1.5">
                 <span className="text-[9px] font-bold text-jpm-teal uppercase tracking-widest">{item.category}</span>
                 {!compact && <span className="text-[10px] text-zinc-400 font-medium">{item.time}</span>}
               </div>
               <h3 className={cn(
-                "font-serif font-bold text-zinc-900 leading-snug group-hover:text-jpm-teal transition-colors mb-1.5",
+                "font-serif font-bold text-zinc-900 leading-normal group-hover:text-jpm-teal transition-colors mb-1.5",
                 compact ? "text-xs" : "text-base"
               )}>
                 {title}

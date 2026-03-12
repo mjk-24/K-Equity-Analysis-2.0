@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import { mockArticles } from '../data/mockArticles';
 import { useLanguage } from '../context/LanguageContext';
 
-export const AnalysisArticles: React.FC = () => {
+export const AnalysisArticles: React.FC<{ fromHome?: boolean }> = ({ fromHome }) => {
   const { language, t } = useLanguage();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
       {mockArticles.map((article) => {
         const title = language === 'ko' && article.title_ko ? article.title_ko : article.title;
         const excerpt = language === 'ko' && article.excerpt_ko ? article.excerpt_ko : article.excerpt;
@@ -17,6 +17,7 @@ export const AnalysisArticles: React.FC = () => {
           <Link 
             key={article.id} 
             to={`/article/${article.id}`}
+            state={{ fromHome }}
             className="group block"
           >
             <div className="relative aspect-[16/9] overflow-hidden mb-6">
@@ -39,11 +40,11 @@ export const AnalysisArticles: React.FC = () => {
                 </div>
               </div>
               
-              <h3 className="text-2xl font-serif font-bold text-jpm-brown leading-tight group-hover:text-jpm-teal transition-colors">
+              <h3 className="text-2xl font-serif font-bold text-jpm-brown leading-normal group-hover:text-jpm-teal transition-colors">
                 {title}
               </h3>
               
-              <p className="text-zinc-600 text-sm leading-relaxed line-clamp-3">
+              <p className="text-zinc-600 text-sm leading-normal line-clamp-3">
                 {excerpt}
               </p>
               

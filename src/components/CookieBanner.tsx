@@ -42,7 +42,7 @@ export const CookieBanner: React.FC = () => {
                   <h3 className="text-xl font-serif font-bold text-jpm-brown">
                     {t('cookie.title')}
                   </h3>
-                  <p className="text-sm text-zinc-600 leading-relaxed max-w-3xl">
+                  <p className="text-sm text-zinc-600 leading-normal max-w-3xl">
                     {t('cookie.description')}
                   </p>
                 </div>

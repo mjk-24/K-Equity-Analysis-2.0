@@ -95,7 +95,7 @@ export const SubscribeModal: React.FC<SubscribeModalProps> = ({ isOpen, onClose 
                     <h3 className="text-2xl font-serif font-bold text-jpm-brown">
                       {t('subscribe.title')}
                     </h3>
-                    <p className="text-sm text-zinc-600 leading-relaxed">
+                    <p className="text-sm text-zinc-600 leading-normal">
                       {t('subscribe.description')}
                     </p>
                   </div>

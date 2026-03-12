@@ -19,11 +19,11 @@ const HomePage: React.FC = () => {
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         <aside className="lg:col-span-3">
-          <NewsBriefs compact />
+          <NewsBriefs compact fromHome />
         </aside>
 
         <main className="lg:col-span-9">
@@ -33,12 +33,12 @@ const HomePage: React.FC = () => {
         </main>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-12">
         <div className="flex items-center justify-between border-b border-zinc-200 pb-4">
           <h2 className="text-3xl font-serif font-bold text-jpm-brown">{t('home.featuredAnalysis')}</h2>
           <Link to="/analysis" className="text-xs font-bold uppercase tracking-widest text-jpm-teal hover:underline">{t('home.viewAll')}</Link>
         </div>
-        <AnalysisArticles />
+        <AnalysisArticles fromHome />
       </div>
     </motion.div>
   );
@@ -50,7 +50,7 @@ const AnalysisPage: React.FC = () => {
     <motion.div 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16"
     >
       <div className="flex items-center justify-between border-b border-zinc-200 pb-4">
         <h2 className="text-4xl font-serif font-bold text-jpm-brown">{t('market.equityAnalysis')}</h2>
@@ -72,19 +72,19 @@ const MarketBriefsPage: React.FC = () => {
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <main className="lg:col-span-8 space-y-8">
+        <main className="lg:col-span-8 space-y-12">
           <div className="border-b border-zinc-200 pb-4">
             <h2 className="text-4xl font-serif font-bold text-jpm-brown">{t('market.briefs')}</h2>
           </div>
           <NewsBriefs />
         </main>
-        <aside className="lg:col-span-4 space-y-8">
+        <aside className="lg:col-span-4 space-y-12">
           <section className="bg-[#0F0F0F] border border-zinc-800 shadow-sm rounded-sm overflow-hidden">
             <TradingViewWidget />
           </section>
           <div className="p-8 bg-jpm-off-white border border-zinc-100">
             <h3 className="font-serif font-bold text-xl text-jpm-brown mb-4">{t('home.dailyOutlook')}</h3>
-            <p className="text-sm text-zinc-600 leading-relaxed">
+            <p className="text-sm text-zinc-600 leading-normal">
               {t('home.outlookText')}
             </p>
           </div>

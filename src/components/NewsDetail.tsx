@@ -1,7 +1,7 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { mockNews } from '../data/mockNews';
-import { ArrowLeft, Calendar } from 'lucide-react';
+import { ArrowLeft, Calendar, Home } from 'lucide-react';
 import { motion } from 'motion/react';
 import ReactMarkdown from 'react-markdown';
 import { useLanguage } from '../context/LanguageContext';
@@ -9,6 +9,8 @@ import { useLanguage } from '../context/LanguageContext';
 export const NewsDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const { language, t } = useLanguage();
+  const location = useLocation();
+  const fromHome = location.state?.fromHome;
   const newsItem = mockNews.find(n => n.id === id);
 
   if (!newsItem) {
@@ -29,10 +31,15 @@ export const NewsDetail: React.FC = () => {
       animate={{ opacity: 1 }}
       className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
     >
-      <Link to="/" className="flex items-center gap-2 text-xs font-bold text-zinc-500 hover:text-jpm-teal mb-12 transition-colors group uppercase tracking-widest">
-        <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
-        {t('news.back')}
-      </Link>
+      <div className="mb-12">
+        <Link 
+          to={fromHome ? "/" : "/market-briefs"} 
+          className="flex items-center gap-2 text-xs font-bold text-zinc-500 hover:text-jpm-teal transition-colors group uppercase tracking-widest"
+        >
+          <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
+          {fromHome ? t('general.backHome') : t('news.back')}
+        </Link>
+      </div>
 
       <header className="mb-16">
         <div className="flex items-center gap-4 mb-8">
@@ -65,7 +72,7 @@ export const NewsDetail: React.FC = () => {
       <footer className="mt-24 pt-12 border-t border-zinc-100">
         <div className="bg-jpm-off-white p-12">
           <h4 className="font-serif font-bold text-2xl text-jpm-brown mb-4">{t('market.briefs')}</h4>
-          <p className="text-sm text-zinc-500 leading-relaxed">
+          <p className="text-sm text-zinc-500 leading-normal">
             {t('news.footerText')}
           </p>
         </div>
