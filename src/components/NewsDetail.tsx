@@ -52,7 +52,7 @@ export const NewsDetail: React.FC = () => {
           </span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-serif font-bold tracking-tight text-jpm-brown mb-12 leading-[1.1]">
+        <h1 className="text-5xl md:text-6xl font-serif font-bold tracking-tight text-jpm-brown mb-12 leading-[1.5]">
           {title}
         </h1>
 

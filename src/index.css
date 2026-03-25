@@ -19,7 +19,7 @@
 }
 
 .markdown-body {
-  @apply text-zinc-800 leading-normal;
+  @apply text-zinc-800 leading-[1.5];
 }
 
 .markdown-body h1 { @apply text-3xl font-bold mb-6 mt-8 font-serif text-jpm-brown; }

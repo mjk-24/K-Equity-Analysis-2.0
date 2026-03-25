@@ -34,7 +34,7 @@ export const NewsBriefs: React.FC<{ compact?: boolean; fromHome?: boolean }> = (
                 {!compact && <span className="text-[10px] text-zinc-400 font-medium">{item.time}</span>}
               </div>
               <h3 className={cn(
-                "font-serif font-bold text-zinc-900 leading-normal group-hover:text-jpm-teal transition-colors mb-1.5",
+                "font-serif font-bold text-zinc-900 leading-[1.5] group-hover:text-jpm-teal transition-colors mb-1.5",
                 compact ? "text-xs" : "text-base"
               )}>
                 {title}

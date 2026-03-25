@@ -13,7 +13,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { motion } from 'motion/react';
 import { Globe } from 'lucide-react';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
-import { PRIVACY_POLICY } from './constants/legal';
+import { PRIVACY_POLICY, ABOUT_US, PRIVACY_POLICY_KO, ABOUT_US_KO } from './constants/legal';
 
 const HomePage: React.FC = () => {
   const { t } = useLanguage();
@@ -97,7 +97,7 @@ const MarketBriefsPage: React.FC = () => {
 };
 
 const AppContent: React.FC = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   return (
     <div className="min-h-screen bg-jpm-bg font-sans text-zinc-900">
       <Navigation />
@@ -108,9 +108,17 @@ const AppContent: React.FC = () => {
         <Route path="/article/:id" element={<ArticleDetail />} />
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/search" element={<SearchResults />} />
-        <Route path="/privacy" element={<LegalPage title="Privacy Policy for K-Equity Analysis" date="Mar 13, 2026" content={PRIVACY_POLICY} />} />
+        <Route path="/privacy" element={<LegalPage 
+          title={language === 'ko' ? "K-Equity Analysis 개인정보 처리방침" : "Privacy Policy for K-Equity Analysis"} 
+          date={language === 'ko' ? "2026년 3월 13일" : "Mar 13, 2026"} 
+          content={language === 'ko' ? PRIVACY_POLICY_KO : PRIVACY_POLICY} 
+        />} />
         <Route path="/terms" element={<LegalPage title={t('footer.terms')} date="Mar 11, 2026" />} />
-        <Route path="/about" element={<LegalPage title={t('footer.about')} date="Mar 11, 2026" />} />
+        <Route path="/about" element={<LegalPage 
+          title={t('footer.about')} 
+          date={language === 'ko' ? "2026년 3월 15일" : "Mar 15, 2026"} 
+          content={language === 'ko' ? ABOUT_US_KO : ABOUT_US} 
+        />} />
         <Route path="/contact" element={<LegalPage title={t('footer.contact')} date="Mar 11, 2026" />} />
         <Route path="/disclaimer" element={<LegalPage title={t('footer.disclaimer')} date="Mar 11, 2026" />} />
         <Route path="/disclosures" element={<LegalPage title={t('footer.disclosures')} date="Mar 11, 2026" />} />

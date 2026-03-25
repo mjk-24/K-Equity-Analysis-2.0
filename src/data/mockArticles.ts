@@ -150,7 +150,7 @@ While above reasons may or may not materialize, but it seems undeniable that Kor
     date: 'Mar 9, 2026',
     ticker: 'KRX:003490',
     rating: 'Buy',
-    imageUrl: 'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&q=80&w=1200&h=600'
+    imageUrl: 'https://images.unsplash.com/photo-1520437358207-323b43b50729?auto=format&fit=crop&q=80&w=1200&h=600'
   },
   {
     id: '5',

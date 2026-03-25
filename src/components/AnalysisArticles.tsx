@@ -40,11 +40,11 @@ export const AnalysisArticles: React.FC<{ fromHome?: boolean }> = ({ fromHome })
                 </div>
               </div>
               
-              <h3 className="text-2xl font-serif font-bold text-jpm-brown leading-normal group-hover:text-jpm-teal transition-colors">
+              <h3 className="text-2xl font-serif font-bold text-jpm-brown leading-[1.5] group-hover:text-jpm-teal transition-colors">
                 {title}
               </h3>
               
-              <p className="text-zinc-600 text-sm leading-normal line-clamp-3">
+              <p className="text-zinc-600 text-sm leading-[1.5] line-clamp-3">
                 {excerpt}
               </p>
               
