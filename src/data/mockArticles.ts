@@ -2,6 +2,239 @@ import { Article } from '../types';
 
 export const mockArticles: Article[] = [
   {
+    id: '10',
+    title: 'Thomson Reuters: The Professional Intelligence Platform (Openclaw Generated)',
+    title_ko: '톰슨 로이터: 전문가 인텔리전스 플랫폼 (Openclaw 생성)',
+    excerpt: 'Thomson Reuters is a slow-moving giant hiding in plain sight — a near-monopoly on legal and tax research infrastructure, now deploying generative AI across its professional platforms with a moat that competitors cannot easily replicate.',
+    excerpt_ko: '톰슨 로이터는 눈에 잘 띄지 않는 느리게 움직이는 거인입니다. 법률 및 세무 리서치 인프라의 사실상 독점 사업자로, 이제 경쟁자들이 쉽게 복제할 수 없는 해자를 갖추고 전문가 플랫폼 전반에 생성형 AI를 배포하고 있습니다.',
+    content: `
+# Thomson Reuters: The Professional Intelligence Platform (Openclaw Generated)
+
+Thomson Reuters (NYSE: TRI) is one of the most misunderstood companies in the public markets — routinely dismissed as a sleepy information services business, yet generating $2B+ in annual free cash flow, compounding its dividend at 10% per year, and sitting on a set of competitive moats so deep that no well-funded competitor has successfully dislodged them in five decades.
+
+## The Corporate Transformation Story
+
+To understand Thomson Reuters today, you have to understand what it used to be. Before 2018, TRI was a sprawling $13B revenue conglomerate with operations in financial terminals, legal research, tax, news, healthcare, and intellectual property. It was unfocused and underperforming in nearly every segment against more specialized rivals.
+
+The transformative event was the 2018 divestiture of its Financial & Risk (F&R) division — including the Reuters Eikon terminal — to a Blackstone-led consortium for $17B. TRI retained a 45% stake in the new entity (Refinitiv), which was then acquired by LSEG (London Stock Exchange Group) in 2021 for $27B. TRI received LSEG shares worth roughly £2.5B and has systematically sold them down since, generating billions that funded share buybacks, dividend increases, and three targeted acquisitions.
+
+What remained after the divestiture is a dramatically simpler, higher-margin company focused on three professional verticals: **Legal, Tax & Accounting, and Corporates**. CEO Steve Hasker, appointed in 2020, crystallized this into the "Big 3" strategy. It is the best version of Thomson Reuters that has ever existed.
+
+## The Crown Jewel: Westlaw
+
+**Westlaw** is not a database. It is the authoritative legal research infrastructure of the US legal system, and the distinction matters enormously for understanding the moat.
+
+Westlaw contains 150+ years of US federal and state case law. Every decision is annotated by **attorney-editors** — practicing lawyers who read each ruling and tag every legal issue, concept, and citation. This is not algorithmic tagging. It is human expert judgment embedded as structured metadata, built over decades.
+
+**KeyCite** — Westlaw's citator — tells a lawyer in real time whether a case they are about to cite is still good law or has been overruled. Getting this wrong means citing overruled precedent in a brief, which is professional malpractice. A partner billing $1,000/hour cannot afford a $50,000 Westlaw subscription to fail them on this one function. The cost-benefit calculation is not even close.
+
+**Westlaw Precision** (2022) and **Litigation Analytics** further extend the moat. The analytics product tells a lawyer: "In 847 summary judgment motions before Judge Smith in the SDNY, the plaintiff wins 34% of the time on negligence claims." No competitor has a comparable data set. It fundamentally changes how lawyers advise clients on settlement vs. trial decisions.
+
+US market share in legal research: Westlaw holds approximately 55-60% vs. LexisNexis at 35-40%. Importantly, most large law firms subscribe to **both** — but when budgets are cut, they drop LexisNexis first.
+
+## The Tax Engine: ONESOURCE
+
+**ONESOURCE** is the most underappreciated asset in the Thomson Reuters portfolio. Every time a multinational company executes a cross-border transaction, it must determine the correct tax treatment across hundreds of jurisdictions — US state and local sales tax, EU VAT, customs duties, excise taxes, withholding taxes. A single wrong determination can trigger audits, penalties, and in some jurisdictions criminal liability.
+
+ONESOURCE automates this in real time, embedded directly into ERP and billing systems. Its depth of coverage at the Global 2000 enterprise tier is unmatched by competitors Vertex (VERX) or Avalara.
+
+The 2024 **Pagero acquisition (~$700M)** was strategically important: the EU, Brazil, India, and dozens of other countries are mandating real-time digital invoice reporting to tax authorities. Pagero is a B2B e-invoicing network connecting businesses for mandatory compliance. This extends ONESOURCE from tax calculation into the fast-growing e-invoicing compliance market that TRI's competitors haven't fully entered.
+
+**Checkpoint** (tax research for CPA firms) and **CS Professional Suite / UltraTax CS** (practice management and tax prep software) round out the Tax & Accounting segment. The 2023 acquisition of **SafeSend** — a digital tax return delivery and e-signature platform — modernizes the last-mile delivery of tax work that still predominantly happens by paper.
+
+## The AI Thesis: CoCounsel as a Platform
+
+Thomson Reuters' AI strategy is the key variable for the next 3-5 years. The core logic: **generative AI does not destroy professional information services — it supercharges them**.
+
+General LLMs hallucinate. For legal, tax, and compliance work, a hallucinated case citation or a fabricated tax ruling is not an inconvenience — it is a liability event. TRI's verified, curated content (Westlaw, Checkpoint) is the **ground truth** that makes AI safe for professional use. CoCounsel connects LLM capability to verified content: AI speed with TRI-certified accuracy.
+
+The CoCounsel product family now covers all three verticals:
+
+- **CoCounsel Legal** — Built on Westlaw content. Drafts memos, reviews contracts, conducts research, summarizes depositions. Fully cited and verifiable.
+- **CoCounsel Tax** — Answers tax research questions with citations from Checkpoint and primary source tax law. Research that took hours completes in minutes.
+- **CoCounsel Audit** — Standardizes audit workflows. Identifies risks in client financial statements. Targets CPA firms doing audit engagements.
+- **Guided Assurance** — AI-powered audit engagement workflow.
+- **Ready to Advise** — Turns client tax data into actionable planning strategies automatically.
+- **Ready to Review** — Automates 1040 individual return preparation, eliminating manual data entry.
+
+The **platform architecture** is what separates this from simply bolting AI features onto existing products. CoCounsel is a common AI layer across all three professional verticals, creating cross-sell opportunities TRI has never had before. Each existing customer — a law firm already paying for Westlaw, a CPA firm on CS Professional Suite — is now a target for incremental ACV without acquiring a new customer.
+
+The foundation was Casetext, acquired for **$650M in 2023** — a venture-backed legal AI startup that had already deployed GPT-4 for legal research. TRI acquired it at what looked like an aggressive price; in hindsight it was the correct move, giving TRI the engineering talent and product architecture to build a credible generative AI layer 18-24 months faster than building internally.
+
+## The Change Programme: $600M Bet on Transformation
+
+In 2021, TRI announced a "Change Programme" — $600M+ invested over three years to modernize the business. This explains operating margin compression from 34% to 28% during 2021-2024.
+
+The programme accomplished three things: cloud migration of legacy on-premise products (enabling AI delivery), platform consolidation (dozens of disparate systems unified onto common infrastructure), and product velocity acceleration (engineering capacity to ship features faster). The costs are now rolling off, and margins should recover toward 30-32% as that normalization plays out.
+
+Organic revenue growth tells the story: 2025 showed +3% (disappointing), but Q1 2026 accelerated to **+9.8%** — the strongest quarterly performance in years. FY2026 analyst consensus is +8.2% organic growth.
+
+## Financial Profile
+
+| Metric | Value |
+|--------|-------|
+| Revenue (FY2025) | $7.5B |
+| Recurring revenue % | ~80% |
+| Gross margin | ~39% |
+| EBITDA margin | ~41% |
+| Free cash flow | $2.02B |
+| FCF margin | ~27% |
+| Customer retention (legal) | 95%+ |
+| Dividend growth (5-yr avg) | ~10%/yr |
+| Shares outstanding | 442M |
+
+FCF has compounded from $1.08B (2021) to $2.02B (2025) — a 17% CAGR entirely from operations. Net income is heavily distorted by LSEG stake disposals (one-time gains) and amortization of acquired intangibles. FCF is the correct lens.
+
+**Dividend track record:**
+
+| Year | Dividend/Share |
+|------|---------------|
+| 2021 | $1.707 |
+| 2022 | $1.875 |
+| 2023 | $1.991 |
+| 2024 | $2.194 |
+| 2025 | $2.417 |
+| 2026E | $2.57 |
+
+Woodbridge Company (Thomson family) controls ~67% of TRI. The family has been exceptional long-term stewards — the Refinitiv divestiture, the Change Programme, and the AI investment were all strategically correct decisions that a quarterly-earnings-focused board might not have made. The governance discount is real (no takeover premium possible), but the operating track record argues in its favor.
+
+## Analyst Consensus & Valuation
+
+| Metric | Value |
+|--------|-------|
+| Current price | ~$90 |
+| Analyst consensus | **Buy** (18 analysts) |
+| Avg price target | $119.33 (+33%) |
+| Target range | $85 – $146 |
+| FY2026 EPS estimate | $4.43 (+11%) |
+| Forward P/E | ~20x |
+| FCF yield | ~5% |
+
+Recent actions: RBC Capital Buy $129 (Jun 25), Morgan Stanley Hold $116 (Jun 12), Wells Fargo downgraded to Hold $85 (Jun 30 — the bear case), Barclays trimmed to Buy $140 from $170 (May 8).
+
+At 20x forward earnings with 95%+ customer retention, 27% FCF margins, 80% recurring revenue, a 10%-growing dividend, and credible AI optionality — the stock is priced for modest growth only. If CoCounsel drives ACV expansion as it should, the re-rating toward $130-140 is the path of least resistance.
+
+## Key Risks
+
+**AI commoditization of legal research.** The most sophisticated version of the threat: Microsoft Copilot for Legal (partnered with LexisNexis) becomes the default interface for law firm drafting. The content underneath is still Westlaw-equivalent, but the interface shifted. TRI's response — CoCounsel embedded in Westlaw — makes CoCounsel the interface. This is the right response, but execution matters.
+
+**Controlled company discount.** Woodbridge/Thomson family control means no takeover premium is possible and shareholders cannot elect a majority of the board. This limits upside in certain scenarios and creates a structural valuation ceiling.
+
+**Change Programme underdelivery.** Organic growth was +3% in 2025 (disappointing) before reaccelerating to +9.8% in Q1 2026. One strong quarter is not a trend — if FY2026 full-year growth reverts to 4-5%, the $600M+ investment underperformed.
+
+**Three concurrent integrations.** Casetext ($650M), SafeSend (~$500M), and Pagero (~$700M) were all acquired within 18 months. Integrating three acquisitions simultaneously while running the Change Programme is operationally complex. Cultural integration of venture-backed startups (Casetext, SafeSend) into an enterprise software culture carries real friction risk.
+
+**Global Print decline.** The smallest segment (~7-8% of revenue) declines ~10% annually, creating an ongoing headwind to reported organic growth that must be overcome by the core segments every year.
+
+## Investment Thesis
+
+Thomson Reuters at ~$90 is a **high-quality compounding machine temporarily repriced** by a disappointing 2025 organic growth number. The core business — Westlaw, ONESOURCE, Checkpoint — has switching costs so extreme and content moats so deep that no competitor has successfully dislodged them in 50 years. The recurring revenue model (80% of sales locked into multi-year contracts) provides exceptional visibility. The dividend has grown every year and will continue to do so.
+
+The AI layer (CoCounsel) is not speculative science project — it is already deployed and generating customer case studies of hour-long workflows completing in minutes. If CoCounsel drives incremental ACV of 15-30% on the installed base, TRI re-rates to $130-150 within 2-3 years.
+
+The bear case ($80-90) is already priced in. The bull case ($140-160) requires CoCounsel to hit its stride. At current prices, that asymmetry is attractive.
+
+*The information provided is for informational purposes only and does not constitute financial or investment advice. Any investment decisions are made solely at your own risk. Past performance is not indicative of future results.*
+    `,
+    content_ko: `
+# 톰슨 로이터: 전문가 인텔리전스 플랫폼 (Openclaw 생성)
+
+톰슨 로이터(NYSE: TRI)는 공개 시장에서 가장 오해받는 기업 중 하나입니다. 흔히 지루한 정보 서비스 사업체로 치부되지만, 연간 20억 달러 이상의 잉여현금흐름을 창출하고 배당금을 연 10%씩 늘리면서, 어떤 자금력 있는 경쟁자도 50년 동안 무너뜨리지 못한 깊은 경쟁 해자를 보유하고 있습니다.
+
+## 기업 변혁의 역사
+
+오늘날의 톰슨 로이터를 이해하려면 과거의 모습을 먼저 알아야 합니다. 2018년 이전, 톰슨 로이터는 금융 단말기, 법률 리서치, 세무, 뉴스, 의료, 지식재산권 분야를 아우르는 130억 달러 규모의 대형 복합기업이었습니다. 방향을 잃고 거의 모든 분야에서 더 전문화된 경쟁자들에게 뒤처지는 상황이었습니다.
+
+결정적인 변화는 2018년 금융 및 리스크(F&R) 부문을 블랙스톤 컨소시엄에 170억 달러에 매각한 것이었습니다. 톰슨 로이터는 신설 법인 '리피니티브(Refinitiv)'의 지분 45%를 보유했고, 2021년 LSEG(런던증권거래소그룹)가 리피니티브를 270억 달러에 인수하면서 톰슨 로이터는 약 25억 파운드 상당의 LSEG 주식을 받았습니다. 이를 체계적으로 매각해 자사주 매입, 배당 인상, 3건의 전략적 인수에 활용했습니다.
+
+매각 후 남은 사업은 훨씬 단순하고 고마진의, **법률·세무·기업고객**이라는 세 전문 분야에 집중한 회사입니다. 2020년 취임한 스티브 하스커 CEO는 이를 'Big 3 전략'으로 명문화했습니다. 역사상 최고의 톰슨 로이터가 탄생한 것입니다.
+
+## 핵심 자산: 웨스트로(Westlaw)
+
+**웨스트로**는 단순한 데이터베이스가 아닙니다. 미국 법률 시스템의 권위 있는 리서치 인프라이며, 이 구분이 경쟁 해자를 이해하는 데 매우 중요합니다.
+
+웨스트로에는 150년 이상의 미국 연방 및 주 판례가 담겨 있습니다. 모든 판결은 **변호사 편집자**가 직접 읽고 법적 쟁점, 개념, 인용을 일일이 태그한 주석이 달려 있습니다. 이는 알고리즘이 아닌 수십 년에 걸쳐 구축된 전문가의 판단이 메타데이터로 녹아 있는 것입니다.
+
+**키사이트(KeyCite)** — 웨스트로의 인용 검증 도구 — 는 변호사가 인용하려는 판례가 여전히 유효한지, 아니면 파기·수정·제한되었는지 실시간으로 알려줍니다. 이를 잘못 판단해 파기된 판례를 인용하면 전문적 과실이 됩니다. 시간당 1,000달러를 청구하는 파트너 변호사가 5만 달러짜리 웨스트로 구독을 이 한 가지 기능을 위해 유지한다 해도 비용 대비 효익 계산은 명확합니다.
+
+**소송 분석(Litigation Analytics)** 기능은 "SDNY 스미스 판사 앞에서 제기된 847건의 약식 판결 신청 중 제조물 결함 과실 청구에서 원고 승소율은 34%"라는 정보를 제공합니다. 어떤 경쟁자도 이에 필적하는 데이터셋을 보유하지 못했으며, 이는 변호사들이 화해 대 재판 결정을 내리는 방식 자체를 바꿉니다.
+
+법률 리서치 미국 시장점유율: 웨스트로 약 55-60%, 렉시스넥시스 약 35-40%. 대형 로펌 대부분이 두 서비스를 모두 구독하지만, 예산 삭감 시 먼저 해지하는 것은 렉시스넥시스입니다.
+
+## 세무 엔진: ONESOURCE
+
+**ONESOURCE**는 톰슨 로이터 포트폴리오에서 가장 저평가된 자산입니다. 다국적 기업이 국경을 넘는 거래를 할 때마다 수백 개 관할권의 세금 처리 — 미국 각 주의 판매세, EU 부가가치세, 관세, 소비세, 원천세 — 를 정확히 결정해야 합니다. 하나라도 잘못 판단하면 세무조사, 과태료, 심한 경우 형사 책임까지 이어질 수 있습니다. ONESOURCE는 이를 ERP·결제 시스템에 내재된 형태로 실시간 자동화합니다.
+
+2024년 **파게로(Pagero) 인수(약 7억 달러)**는 전략적으로 중요했습니다. EU, 브라질, 인도 등 수십 개국이 세무당국에 대한 실시간 디지털 인보이스 신고를 의무화하고 있습니다. 파게로는 이 의무 준수를 위한 B2B 전자인보이스 네트워크로, ONESOURCE의 영역을 세금 계산에서 빠르게 성장하는 전자인보이스 컴플라이언스 시장으로 확장시킵니다.
+
+## AI 전략: 플랫폼으로서의 코카운슬(CoCounsel)
+
+톰슨 로이터의 AI 전략은 향후 3-5년의 핵심 변수입니다. 핵심 논리는 명확합니다: **생성형 AI는 전문가 정보 서비스를 파괴하지 않고, 오히려 강화합니다.**
+
+범용 LLM은 환각(hallucination)을 일으킵니다. 법률, 세무, 컴플라이언스 업무에서 존재하지 않는 판례를 인용하거나 가짜 세무 판단을 내리는 것은 단순한 불편이 아니라 법적 책임 사건입니다. 톰슨 로이터의 검증된 큐레이션 콘텐츠(웨스트로, 체크포인트)는 AI를 전문가 업무에 안전하게 사용할 수 있게 하는 **근거 사실(ground truth)**입니다. 코카운슬은 LLM의 역량과 검증된 콘텐츠를 연결합니다.
+
+코카운슬 제품군은 세 전문 분야 전체를 포괄합니다:
+
+- **코카운슬 법률** — 웨스트로 콘텐츠 기반. 법률 의견서 초안 작성, 계약서 검토, 리서치 수행, 증언 요약. 완전한 인용 제공.
+- **코카운슬 세무** — 체크포인트 및 1차 세법 자료 인용으로 세무 리서치 질문에 답변. 수 시간이 걸리던 리서치를 수 분으로.
+- **코카운슬 감사** — 감사 워크플로우 표준화. AI가 고객 재무제표의 위험 요소 식별.
+- **가이디드 어슈어런스** — AI 기반 감사 참여 워크플로우.
+- **레디 투 어드바이즈** — 고객 세금 데이터를 절세 전략으로 자동 전환.
+- **레디 투 리뷰** — 1040 개인 세금 신고서 준비 자동화. 수동 데이터 입력 제거.
+
+핵심은 **플랫폼 아키텍처**입니다. 코카운슬은 세 전문 분야 전체를 아우르는 공통 AI 레이어로, 기존에 없던 교차 판매 기회를 만들어냅니다. 웨스트로를 쓰는 로펌은 코카운슬 법률로, CS Professional Suite를 쓰는 회계법인은 코카운슬 세무와 감사로 추가 ACV 확보가 가능해집니다.
+
+## 재무 프로파일
+
+| 지표 | 값 |
+|------|-----|
+| 매출(2025년) | 75억 달러 |
+| 반복 매출 비중 | 약 80% |
+| 매출총이익률 | 약 39% |
+| EBITDA 마진 | 약 41% |
+| 잉여현금흐름 | 20.2억 달러 |
+| FCF 마진 | 약 27% |
+| 고객 유지율(법률) | 95%+ |
+| 배당 성장률(5년 평균) | 약 10%/년 |
+
+잉여현금흐름은 2021년 10.8억 달러에서 2025년 20.2억 달러로 4년간 17% CAGR로 성장했으며, 이는 전적으로 핵심 영업 실적에서 비롯된 것입니다.
+
+## 밸류에이션 및 애널리스트 컨센서스
+
+| 지표 | 값 |
+|------|-----|
+| 현재 주가 | 약 90달러 |
+| 애널리스트 컨센서스 | **매수** (18명) |
+| 평균 목표주가 | 119.33달러 (+33%) |
+| 목표주가 범위 | 85 – 146달러 |
+| 2026년 예상 EPS | 4.43달러 (+11%) |
+| 선행 PER | 약 20배 |
+| FCF 수익률 | 약 5% |
+
+현재 주가 90달러는 완만한 성장만을 반영하는 수준입니다. 코카운슬이 기존 고객 기반에서 ACV를 15-30% 확장하면, 향후 2-3년 내 130-150달러로의 재평가가 이뤄질 가능성이 높습니다.
+
+## 핵심 리스크
+
+**AI로 인한 법률 리서치 상품화.** 가장 진지하게 봐야 할 위협은 누군가가 웨스트로의 콘텐츠 데이터베이스를 복제하는 것이 아닙니다. 인터페이스 레이어 자체의 가치가 이동하는 것입니다. 마이크로소프트 코파일럿 포 리걸이 법률 문서 작성의 기본 인터페이스가 된다면, 변호사들이 웨스트로 탭을 직접 열지 않을 수 있습니다. 웨스트로가 CoCounsel을 임베드하는 전략은 올바른 대응이지만 실행력이 관건입니다.
+
+**지배 구조 할인.** 우드브릿지(Thomson 가문)의 67% 지분 통제는 적대적 인수가 불가능해 인수 프리미엄이 없으며, 주주들이 이사회 다수를 선출할 수 없다는 것을 의미합니다.
+
+**변혁 프로그램 성과 미달.** 2025년 유기적 성장률은 +3%로 실망스러웠으나 2026년 1분기에 +9.8%로 재가속했습니다. 단 한 분기의 강세가 추세는 아니며, 2026년 연간 성장률이 관건입니다.
+
+## 투자 결론
+
+90달러 수준의 톰슨 로이터는 2025년 유기적 성장 실망으로 일시적으로 재평가된 **고품질 복리 기계**입니다. 웨스트로, ONESOURCE, 체크포인트로 구성된 핵심 사업은 50년 동안 어떤 경쟁자도 무너뜨리지 못한 전환 비용과 콘텐츠 해자를 보유합니다. 80%의 반복 매출, 95%+ 고객 유지율, 10% 성장하는 배당이 하방을 지지하고, 코카운슬 ACV 확장 성공 시 130-160달러로의 상방이 열립니다.
+
+현재 주가에서 하방 리스크(80-90달러)는 이미 반영되어 있고, 상방 잠재력(140-160달러)은 AI 레이어의 성과에 달려 있습니다. 이 비대칭성은 매력적입니다.
+
+*제공된 정보는 정보 제공 목적으로만 사용되며 금융 또는 투자 자문을 구성하지 않습니다. 모든 투자 결정은 전적으로 귀하의 책임하에 이루어집니다. 과거의 성과가 미래의 결과를 보장하지 않습니다.*
+    `,
+    date: 'Jul 13, 2026',
+    ticker: 'NYSE:TRI',
+    rating: 'Buy',
+    imageUrl: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1200&h=600'
+  },
+  {
     id: '9',
     title: 'Samsung Electro-Mechanics: The Quiet Backbone of the AI Boom',
     title_ko: '삼성전기: AI 붐을 떠받치는 조용한 핵심축',
